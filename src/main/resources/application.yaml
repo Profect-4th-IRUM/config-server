@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: ${PORT:8888}
 
 spring:
   application:
@@ -16,10 +16,14 @@ spring:
             - api-gateway
             - service-discovery
             - member-service
+            - product-service
+            - order-service
+            - payment-service
+            - ai-service
 
     bus:
       enabled: true
-      destination: "my-custom-bus-topic"
+      destination: "bus-topic"
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
 
