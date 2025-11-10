@@ -21,11 +21,11 @@ spring:
             - payment-service
             - ai-service
 
-    bus:
-      enabled: true
-      destination: "bus-topic"
-  kafka:
-    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+#    bus:
+#      enabled: true
+#      destination: "bus-topic"
+#  kafka:
+#    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
 
 management:
   endpoints:
