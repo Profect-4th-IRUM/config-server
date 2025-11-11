@@ -9,6 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/Profect-4th-IRUM/config-repo
+          clone-on-start: true
           username: ${GIT_USERNAME}
           password: ${GIT_TOKEN}
           default-label: develop
